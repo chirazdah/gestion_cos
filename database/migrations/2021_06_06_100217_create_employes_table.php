@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateEmployeTable extends Migration
+class CreateEmployesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -25,11 +25,12 @@ class CreateEmployeTable extends Migration
     }
 
     /**
-     * Reverse the migratioS
+     * Reverse the migrations.
+     *
      * @return void
      */
     public function down()
     {
-        Schema::dropIfExists('employe');
+        Schema::dropIfExists('employes');
     }
 }
